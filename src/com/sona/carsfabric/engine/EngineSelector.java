@@ -1,5 +1,7 @@
 package com.sona.carsfabric.engine;
 
+import com.sona.carsfabric.Car;
+
 public class EngineSelector {
     public int price;
 
@@ -23,7 +25,9 @@ public class EngineSelector {
                 break;
         }
         Engine engine=engineFactory.engineMake();
-        price = engine.getPrice();
+        price = engine.price;
         System.out.println(engine.getModel() + " Price: " + price);
+        Car.engine=engine;
+        Car.price+=price;
     }
 }

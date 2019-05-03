@@ -1,5 +1,7 @@
 package com.sona.carsfabric.carstype;
 
+import com.sona.carsfabric.Car;
+
 public class ModelSelector {
     public int price;
 
@@ -38,7 +40,9 @@ public class ModelSelector {
                 break;
         }
         CarModel carModel = carModelFactory.makeCarModel();
-        price = carModel.getPrice();
+        this.price=carModel.price;
         System.out.println(carModel.getModel() + " Price: " + price);
+        Car.model=carModel;
+        Car.price+=price;
     }
 }

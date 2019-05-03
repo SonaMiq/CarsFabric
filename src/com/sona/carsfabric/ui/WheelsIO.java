@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class WheelsIO {
     WheelsSelector wheelsSelector;
     int price;
-    public void whelsIO(){
+    public WheelsIO(){
         System.out.println("Insert wheels type: Back, Front, 4x4");
         Scanner scanner = new Scanner(System.in);
         String wheelsType = scanner.next();

@@ -9,7 +9,7 @@ public class ExterierIO {
     ExterierSelector exterierSelector;
     int price;
 
-    public void exterierIO() {
+    public ExterierIO() {
         System.out.println("Insert exterior type: FogLights, Hatch");
         Scanner scanner = new Scanner(System.in);
         String exterierType = scanner.next();

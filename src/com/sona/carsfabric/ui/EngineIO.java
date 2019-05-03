@@ -9,7 +9,7 @@ public class EngineIO {
     EngineSelector engineSelector;
     int price;
 
-    public void engineIO() {
+    public  EngineIO() {
         System.out.println("Insert engine type: Diesel, Electrical, Hybrid, Petrol");
         Scanner scanner = new Scanner(System.in);
         String engineType = scanner.next();
@@ -21,7 +21,7 @@ public class EngineIO {
                 engineSelector = new EngineSelector(EngineType.ELECTRICAL);
                 break;
             case "Hybrid":
-                engineSelector = new EngineSelector(EngineType.ELECTRICAL);
+                engineSelector = new EngineSelector(EngineType.HYBRID);
                 break;
             case "Petrol":
                 engineSelector = new EngineSelector(EngineType.PETROL);

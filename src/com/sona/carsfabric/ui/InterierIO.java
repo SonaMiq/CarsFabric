@@ -9,7 +9,7 @@ public class InterierIO {
     InterieSelector interieSelector;
     int price;
 
-    public void interierIO() {
+    public InterierIO() {
         System.out.println("Insert interior type: HeatingSeat, LeatherSalon");
         Scanner scanner = new Scanner(System.in);
         String interierType = scanner.next();
@@ -18,7 +18,7 @@ public class InterierIO {
                 interieSelector = new InterieSelector(InterierType.HEATINGSEAT);
                 break;
             case "LeatherSalon":
-                interieSelector = new InterieSelector(InterierType.HEATINGSEAT);
+                interieSelector = new InterieSelector(InterierType.LEATHERSALON);
                 break;
             default:
                 break;

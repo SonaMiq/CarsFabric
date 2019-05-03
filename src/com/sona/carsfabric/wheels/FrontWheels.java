@@ -2,11 +2,12 @@ package com.sona.carsfabric.wheels;
 
 public class FrontWheels extends Wheels {
 
+    @Override
     public String getModel() {
         return "Front wheel";
     }
 
-    public int getPrice() {
-        return 3000;
+    public FrontWheels() {
+        super(3000);
     }
 }

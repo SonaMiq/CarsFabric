@@ -1,12 +1,14 @@
 package com.sona.carsfabric.carstype;
 
 public class Tractor extends CarModel {
-    public int getPrice() {
-        return 7000;
-    }
 
+   Tractor(){
+       super(7000);
+   }
+
+    @Override
     public String getModel() {
-        return "Car Model Tractor";
+       return  "Car Model Tractor";
     }
 }
 

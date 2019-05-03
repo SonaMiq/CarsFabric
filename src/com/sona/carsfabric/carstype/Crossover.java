@@ -2,10 +2,11 @@ package com.sona.carsfabric.carstype;
 
 public class Crossover extends CarModel {
 
-    public int getPrice() {
-        return 25000;
+    Crossover() {
+        super(20000);
     }
 
+    @Override
     public String getModel() {
         return "Car Model Crossover";
     }

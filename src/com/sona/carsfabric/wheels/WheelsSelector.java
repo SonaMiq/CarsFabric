@@ -1,5 +1,8 @@
 package com.sona.carsfabric.wheels;
 
+import com.sona.carsfabric.Car;
+import com.sona.carsfabric.exterier.CarExterier;
+
 public class WheelsSelector {
     public int price;
 
@@ -19,7 +22,9 @@ public class WheelsSelector {
                 break;
         }
         Wheels wheels = wheelsFactory.wheelsMake();
-        price = wheels.getPrice();
+        price=wheels.price;
         System.out.println(wheels.getModel() + " Price: " + price);
+        Car.wheels=wheels;
+        Car.price+=wheels.price;
     }
 }

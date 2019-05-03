@@ -10,7 +10,7 @@ public class CarIO {
     ModelSelector modelSelector;
     int price;
 
-    public void carIO() {
+    public CarIO() {
         System.out.println("Insert car type: Crossover, Hatchback, Sedan, Tractor, Truck");
         Scanner scanner = new Scanner(System.in);
         String modelType = scanner.next();
@@ -43,10 +43,6 @@ public class CarIO {
             default:
                 break;
         }
-    }
-
-    public int getPrice() {
-        return modelSelector.price;
     }
 }
 

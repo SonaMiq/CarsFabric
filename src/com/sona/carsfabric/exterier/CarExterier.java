@@ -1,9 +1,14 @@
 package com.sona.carsfabric.exterier;
 
 public abstract class CarExterier {
+
+    int price;
+
     public abstract String getType();
 
-    public abstract int getPrice();
+    public CarExterier(int price) {
+        this.price = price;
+    }
 
     public interface ExterierFactory {
         public CarExterier exterierMake();

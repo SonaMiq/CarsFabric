@@ -1,5 +1,7 @@
 package com.sona.carsfabric.interior;
 
+import com.sona.carsfabric.Car;
+
 public class InterieSelector {
     public int price;
 
@@ -16,7 +18,9 @@ public class InterieSelector {
                 break;
         }
         CarInterier carInterier = interierFactory.interierMake();
-        price = carInterier.getPrice();
+        price = carInterier.price;
         System.out.println(carInterier.getType() + " Price: " + price);
+        Car.carInterier=carInterier;
+        Car.price+=price;
     }
 }

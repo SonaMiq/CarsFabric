@@ -1,10 +1,10 @@
 package com.sona.carsfabric.carstype;
 
 public class Hatchback extends CarModel {
-    public int getPrice() {
-        return 15000;
-    }
-
+   Hatchback(){
+       super(15000);
+   }
+    @Override
     public String getModel() {
         return "Car Model Hatchback";
     }

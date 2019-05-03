@@ -2,11 +2,12 @@ package com.sona.carsfabric.engine;
 
 public class ElectricalEngine extends Engine {
 
+    @Override
     public String getModel() {
         return "Electrical Engine";
     }
 
-    public int getPrice() {
-        return 10000;
+    ElectricalEngine() {
+        super(10000);
     }
 }

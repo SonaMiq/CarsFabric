@@ -1,5 +1,7 @@
 package com.sona.carsfabric.exterier;
 
+import com.sona.carsfabric.Car;
+
 public class ExterierSelector {
     public int price;
 
@@ -16,7 +18,9 @@ public class ExterierSelector {
                 break;
         }
         CarExterier carExterier = exterierFactory.exterierMake();
-        price = carExterier.getPrice();
+        price = carExterier.price;
         System.out.println(carExterier.getType() + " Price: " + price);
+        Car.carExterier=carExterier;
+        Car.price+=price;
     }
 }

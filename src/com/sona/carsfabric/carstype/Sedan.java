@@ -2,41 +2,49 @@ package com.sona.carsfabric.carstype;
 
 
 public class Sedan extends CarModel {
-    public int getPrice() {
-        return 20000;
+
+    Sedan(int price) {
+        super(price);
     }
 
+    @Override
     public String getModel() {
         return "Car Model Sedan";
     }
 }
 
 class SportCar extends Sedan {
-    public int getPrice() {
-        return 22000;
+    SportCar() {
+        super(22000);
     }
 
+    @Override
     public String getModel() {
-        return "Car Model Sedan SportCar";
+        super.getModel();
+        return "SportCar";
     }
 }
 
 class Business extends Sedan {
-    public int getPrice() {
-        return 25000;
+    Business() {
+        super(25000);
     }
 
+    @Override
     public String getModel() {
-        return "Car Model Sedan Business";
+        super.getModel();
+        return "Business";
     }
 }
 
 class Electric extends Sedan {
-    public int getPrice() {
-        return 30000;
+    Electric() {
+        super(30000);
     }
 
+    @Override
     public String getModel() {
-        return "Car Model Sedan Electric";
+        super.getModel();
+        return "Electric";
     }
 }
